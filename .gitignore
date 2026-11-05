@@ -1,0 +1,15 @@
+# Autosave files
+*.asv
+*.m~
+*.autosave
+
+# MATLAB generated content
+*.mex*
+*.slxc
+slprj/
+codegen/
+
+# CMake and Visual Studio build output
+build/
+.vs/
+

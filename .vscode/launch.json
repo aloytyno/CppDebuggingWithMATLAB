@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C++ Pipeline",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/RelWithDebInfo/nr_ofdm_debug_demo.exe",
+      "args": [
+        "${input:matlabEngineName}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "C:\\Program Files\\MATLAB\\R2026b_full\\bin\\win64;C:\\Program Files\\MATLAB\\R2026b_full\\extern\\bin\\win64;${env:PATH}"
+        }
+      ],
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build C++ Pipeline",
+      "stopAtEntry": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "matlabEngineName",
+      "type": "promptString",
+      "description": "Paste the shared engine name printed by runPipelineDemo(false)"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "MATLAB R2026b",
+      "includePath": [
+        "${workspaceFolder}",
+        "C:/Program Files/MATLAB/R2026b_full/extern/include"
+      ],
+      "intelliSenseMode": "windows-msvc-x64",
+      "cppStandard": "c++17"
+    }
+  ]
+}
